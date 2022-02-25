@@ -43,3 +43,11 @@
     margin-left: 40px;
   }
 }
+
+@media (max-width: 363px) {
+  .about .about-content .personal-info .info-item  {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+}
