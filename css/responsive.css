@@ -35,3 +35,11 @@
   }
 
 }
+
+@media (max-width: 523px) {
+  .about .about-content .personal-info .info-devision {
+    flex:  0 0 30%;
+    width: 30%;
+    margin-left: 40px;
+  }
+}
