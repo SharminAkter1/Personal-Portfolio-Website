@@ -13,7 +13,7 @@ body.normal {
   --bg-black-100:#fdf9ff;
   --bg-black-50:#e8dfec;
   --text-black-900:#302e4d;
-  --text-black-700:#504e70;
+  --text-black-700:#504e70; 
 }
 
 body {
@@ -164,8 +164,6 @@ ul {
 
 .aside-section .logo a {
   color: var(--text-black-900);
-  /* background-color: greenyellow;
-  background-color: red; */
   padding: 10px 20px;
   font-weight: 700;
   font-size:30px;
@@ -200,48 +198,25 @@ ul {
   top: 0;
 }
 
-.aside-section .nav-toggler {
-  width: 45px;
-  height: 40px;
+.checkbtn {
+  color: var(--skin-color);
+  cursor: pointer;
+  padding: 5px 13px;
   position: fixed;
   top: 20px;
-  left:300px;
-  cursor: pointer;
+  float: right;
+  right: 25px;
+  margin-right: 0px;
   border-radius: 5px;
   border: 1px solid var(--bg-black-50);
   background: var(--bg-black-100);
-  justify-content: center;
-  align-items: center;
+  display: none;
+} 
+
+#check {
   display: none;
 }
 
-.aside-section .nav-toggler span {
-  width: 18px;
-  height: 2px;
-  background-color: var(--skin-color);
-  position: relative;
-  display:inline-block;
-}
-
-.aside-section .nav-toggler span::before {
-  content: '';
-  width: 18px;
-  height: 2px;
-  background-color: var(--skin-color);
-  position:absolute;
-  top: -6px;
-  left: 0;
-}
-
-.aside-section .nav-toggler span::after{
-  content: '';
-  width: 18px;
-  height: 2px;
-  background-color: var(--skin-color);
-  position:absolute;
-  top: 6px;
-  left: 0;
-}
 .aside-section .nav {
   margin-top: 50px;
 }
@@ -251,7 +226,7 @@ ul {
   display: block;
 }
 
-.aside-section .nav li a {
+.aside-section ul li a {
   font-size: 16px;
   font-weight: 600;
   display: block;
@@ -260,7 +235,12 @@ ul {
   padding: 5px 15px;
 }
 
+
 .aside-section .nav .active{
+  color: var(--skin-color);
+}
+
+.aside-section .nav li a:hover {
   color: var(--skin-color);
 }
 
@@ -303,6 +283,7 @@ h3.hello span {
   font-size: 17px;
   color: var(--text-black-700);
 }
+
 .home .home-info {
   flex: 0 0 60%;
   max-width: 60%;
@@ -496,7 +477,6 @@ h3.hello span {
   left: 7px;
   /* background: var( --skin-colorG); */
   background-color:var(--skin-color);
-
 }
 
 .about .about-content .timeline .timeline-item .circle-dot {
@@ -544,6 +524,7 @@ h3.hello span {
 .service .container {
   padding-bottom: 40px;
 }
+
 .service .service-item {
   margin-bottom: 30px;
   flex: 0 0 33.33%;
@@ -739,4 +720,22 @@ h3.hello span {
   height: 50px;
   padding: 0 50px;
 }
+
+/* Footer */
+.footer {
+  background: var(--skin-color);
+}
+
+.footer .container{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.footer p {
+  color: var(--text-black-900);
+  padding: 13px;
+  text-align: center;
+  font-size: 16px;
+}
+
 

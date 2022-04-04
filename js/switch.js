@@ -11,6 +11,14 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// hide ul - click ul-a 
+// const navUl = document.querySelector(".nav");
+// navUl.addEventListener("click", () => {
+//   if(document.querySelector(".nav").classList .toggle("open")) {
+//     document.querySelector(".nav").remove("open")
+//   }
+// });
+
 /* Theme Color */
 const alternativeStyle = document.querySelectorAll(".alternate-style");
 
